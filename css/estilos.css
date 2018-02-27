@@ -6,6 +6,15 @@ body{
 	color: white;
 }
 
+footer{
+	border: 1px solid orange;
+	font-weight: bold;
+	font-size: 100px;
+	padding: 50px;
+	text-align: center;
+
+}
+
 header{
 	border: 1px solid black;
 	background: black;
@@ -18,6 +27,9 @@ header nav ul li{
 	border: 1px solid white;
 	border-radius: 5px;
 	display: inline-block;
+	padding: 10px 20px;
+	margin-right: 20px;
+	/*margin: 0px 20px 0px 0px;*/
 	width: 90px; 
 }
 
@@ -26,5 +38,18 @@ header nav ul li:hover{
 	border: 1px solid orange;
 	border-radius: 5px;
 	display: inline-block;
-	width: 200px; 
+	width: 90px; 
+}
+
+main{
+	margin-top: 20px;
+}
+
+main article{
+	border: 1px dashed black;
+	border-color: white;
+	display: inline-block;
+	text-align: justify;
+	vertical-align: top;		
+	width: 33.10%;
 }
