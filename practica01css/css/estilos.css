@@ -5,13 +5,28 @@ body{
 	max-width: 1024px;
 }
 
+
+
 header nav form{
 	float: right;
+	margin-right: 20px;
 	margin-top: -34px;
+
+}
+
+header nav form input{
+	border-radius: 5px;
+}
+
+header nav form input[type="button"]{
+	background: #2DC42B;
+	border: 1px solid green;
+	color: white;
 }
 
 header{
 	background: #B3D8EB;
+	/*margin-bottom: 15px;*/
 }
 
 header nav{
@@ -28,6 +43,46 @@ header nav ul li{
 	margin-right: 20px; 
 }
 
+#seccion01{
+	margin-top: 10px
+}
+
+#seccion01 article{
+	text-align: center;
+}
+
+#seccion01 article img{
+	border: 5px solid rgba(150,150,150,0.5);
+	width: 98%;
+}
+
+#seccion02 article{
+	display: inline-block;
+	vertical-align: top;
+	width: 32.8%;
+}
+
+#seccion02 article input[type="submit"]{
+	background: white;
+	border-radius: 5px;
+	color: blue;
+	margin-left: 120px
+}
+
+
 #logo{
 	margin-top: -150px
+}
+
+.unaSeccion{/*esto es una clase*/
+	font-size: 4.5em;
+	
+}
+.otraSeccion{
+	font-size: 2.5em;
+	
+}
+
+.otraSeccion,.unaSeccion{
+	font-weight: bold; /*negritas*/
 }
