@@ -1,0 +1,43 @@
+body {
+	border: 1px solid white; 
+	background: #2b2b2b;
+	font-size: 16px;
+	margin:0 auto;
+	max-width: 1024px;
+	min-width: 1024px;
+}
+header article{
+	display: inline-block;
+}
+header article img{
+	width: 800px;
+}
+header article {
+	vertical-align: top;
+}
+
+#primerseccion article{
+	display: inline-block;
+	width: 17%;
+
+}
+#primerseccion article img{
+	display: inline-block;
+	width: 100%;
+
+}
+
+#segundaseccion article img{
+	width: 100%;
+
+}
+
+#segundaseccion article{
+	vertical-align: top;
+	display: inline-block;
+	width: 30%;
+}
+
+.segundaletracomun{
+	font-weight: bold;
+}
