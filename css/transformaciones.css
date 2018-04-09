@@ -1,33 +1,91 @@
-article{
+article {
 	background: greenyellow;
 	border: 2px solid black;
 	color: black;
-	margin: 20px 50px;
+	margin: 20px 5px;
 	padding: 15px;
 	text-align: center;
 	-o-transition: all 5s linear;
 	-ms-transition: all 5s linear;
 	-webkit-transition: all 5s linear;
 	-moz-transition: all 5s linear;
-	transition: all 5s linear;
+	transition: all 1s linear;
 	width: 400px;
 }
 
-article p{
+article p {
 	font: 30px Tahoma;
 	font-weight: bold;
 	width: 100%;
 }
 /*
-article:hover{
-	height: 400px;
-	width: 800px;
-}*/
-article:hover{
+article:hover {
 	background: black;
 	color: greenyellow;
+	width: 30%;
 	-o-transform: translate(150px, 300px);
 	-ms-transform: translate(150px, 300px);
-	-webkit-transform: translate(150px, 300px);
 	-moz-transform: translate(150px, 300px);
+	-webkit-transform: translate(150px, 300px);
+	transform: translate(150px, 300px);
 }
+*/
+
+/*
+article:hover {
+	background: black;
+	color: greenyellow;
+	width: 30%;
+	-o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+*/
+
+
+article:hover {
+	background: black;
+	box-shadow: 20px 20px grey;
+	color: greenyellow;
+	width: 30%;
+	-o-transform: skew(-5deg, -5deg) -o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);;
+	-ms-transform: skew(-5deg, -5deg) -o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);;
+	-moz-transform: skew(-5deg, -5deg) ;
+	-webkit-transform: skew(--5deg, -5deg) -o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);;
+	transform: skew(-5deg, -5deg) -o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);;
+
+	-o-transform: translate(150px, 300px);
+	-ms-transform: translate(150px, 300px);
+	-moz-transform: translate(150px, 300px);
+	-webkit-transform: translate(150px, 300px);
+	transform: translate(150px, 300px);
+}
+
+
+
+
+
+
+
+
+
+
+
