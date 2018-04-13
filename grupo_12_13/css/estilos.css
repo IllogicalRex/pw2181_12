@@ -1,0 +1,116 @@
+body{
+	font-size: 16px;
+	margin: 0 auto;
+	width: 1024px;
+	background: white;
+}
+/*div*/
+/*#f8ca43
+#80bcb6
+#f8a097*/
+header article section nav ul li{
+	
+	color: black;
+	display: inline-block;
+	font-size: 1em;
+	margin-right: 15px;
+	padding-bottom: 3px;
+}
+
+#aticuloSeccion02 span{
+	margin-left: 300px;
+
+}
+
+#aticuloSeccion02 section nav ul{
+	margin-left: 150px;
+
+}
+#bon_puf{
+	height: 150px;
+	width: 180px;
+}
+
+#colorHome{
+	color: #f8a097;
+}
+#cotton_candy{
+	border-radius: 300px;
+	height: 350px;
+	width: 350px;
+}
+
+#headerseccion01 article{
+	display: inline-block;
+}
+
+#redesSoc{
+	margin-left: 150px;
+	margin-top: 50px;
+}
+
+#redesSoc img{
+	margin-left: 15px;
+	height: 35px;
+	width: 35px;
+}
+
+#seccion01Seccion01 span{
+	color: #83b4b1;
+	font-size: 1em;
+}
+#Seccion01 article{
+	display: inline-block;
+	width: 40%;
+}
+
+#seccion01-01 span{
+	font-size: 1.5em;
+	
+}
+#seccion01article02 article{
+	display: inline-block;
+	margin-top: -300px;
+	margin-left: 100px; 
+	text-align: center;
+	
+}
+
+#seccion01article02 section div{
+	display: inline-block;
+}
+
+#seccion01article02 section div span{
+	text-align: center;
+}
+
+#services{
+	background: #f8ca43;
+	border-radius: 200px;
+	height: 100px;
+	text-align: center;
+	width: 100px;
+}
+#flavors{
+	background: #80bcb6;
+	border-radius: 200px;
+	height: 100px;
+	text-align: center;
+	width: 100px;
+}
+#eye_candy{
+	background: #f8a097;
+	border-radius: 200px;
+	height: 100px;
+	text-align: center;
+	width: 100px;
+}
+
+#Seccion02 article{
+	display: inline-block;
+	width: 40%;
+}
+
+#Seccion02 article span{
+	color: #f8a097;
+}
