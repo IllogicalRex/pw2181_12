@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Gatito</title>
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<section>
+		<header>
+			<span>Tiempo jugador: </span>
+			<div id="tiempo"></div>
+			<span>Tiempo total de partida: </span>
+			<div></div>
+			<span>Turno: </span>
+			<div></div>
+		</header>
+		<section> 
+			<button id="1" onclick="iniciarWorker();">X</button>
+			<button id="2" onclick="iniciarWorker1();">O</button>
+			<button id="3" onclick="iniciarWorker2();">X</button> <br>
+			<button id="4" onclick="iniciarWorker3();">O</button>
+			<button id="5" onclick="iniciarWorker4();">X</button>
+			<button id="6" onclick="iniciarWorker5();">O</button> <br>
+			<button id="7" onclick="iniciarWorker6();">X</button>
+			<button id="8" onclick="iniciarWorker7();">O</button>
+			<button id="9" onclick="iniciarWorker8();">X</button>
+		</section>
+	</section>
+
+	<script>
+		var w1,w2;
+		function iniciarWorker(){
+			//preguntar si soporta workers.
+			if(typeof(Worker)!= "undefined"){
+				if(typeof(w1) == "undefined"){
+					w1 = new Worker("demoWorker.js"); 
+					w1.onmessage = function(event){
+						document.getElementById('tiempo').innerHTML = event.data;
+					}
+				}
+
+			}else{
+				alert("El navegador no soporta workers");
+			}
+		}
+
+
+		function pararWorker(){
+			w1.terminate();
+			w1 = undefined;
+		}
+
+		
+	</script>
+	
+</body>
+</html>

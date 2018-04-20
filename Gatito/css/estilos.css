@@ -1,0 +1,28 @@
+body section{
+	background: black;
+	width: 317px;
+}
+body section button{
+	background: #6F6EBC;
+	border-radius: 100px;
+	color: yellow;
+	font-size: 60px;
+	height: 100px;
+	width: 100px;
+}
+body header span{
+	color:white;
+	font-size: 25px;
+	font-family: 'Dancing Script', cursive;
+}
+
+body section header div{
+	color:white;
+	font-size: 25px;
+	font-family: 'Dancing Script', cursive;
+}
+
+body header div{
+	
+}
+
