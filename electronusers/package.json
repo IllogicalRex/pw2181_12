@@ -1,0 +1,26 @@
+{
+  "name": "electronusers",
+  "version": "1.0.0",
+  "description": "Ususrios aleatorios de randomuser.me",
+  "main": "main.js",
+  "scripts": {
+    "start":"electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Usuarios",
+    "aleatorios",
+    "random",
+    "internet",
+    "PW"
+  ],
+  "author": "Joel Velazquez",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.8.6",
+    "electron-packager": "^12.0.1"
+  },
+  "dependencies": {
+    "electron-require": "^0.3.0"
+  }
+}
