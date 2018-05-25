@@ -12,15 +12,12 @@ var inicioApp = function(){
 			url: "php/validaentrada.php",
 			data: parametros,
 			success: function(response){
-				console.log('response');
-				console.log(response);
 				if(response.respuesta){
 					//ocultamos el inicio
 					$("#secInicio").hide("slow");
 					//aparecemos usuario
-					$("#frmUsuario").hide("slow");
+					$("#frmUsuarios").show("slow");
 					//Cursor en el primer cuadro de texto
-					$("#txtNombreUsuario").hide("slow");
 
 
 					alert("Bienvenido");
@@ -63,13 +60,42 @@ var inicioApp = function(){
 		}
 	}
 
-	varTeclaUsuario = function(tecla){
+	var teclaNombreUsuario = function(tecla){
 		if (tecla.which == 13){
 			buscarUsuario();
 		}
 	}
+	var Guardar = function(){
+		var usuario = $("#txtNombreUsuario").val();
+		var nombre = $("#txtNombre").val();
+		var clave = $("#txtClaveUsuario").val();
+
+		if(usuario!="" && nombre!="" && clave!= ""){
+			$.ajax({
+			cache:false,
+			type: "POST",//para que no muestre contraseña
+			dataType: "json",
+			url: "php/guardarusuario.php",
+			data: parametros,
+			success: function(response){
+				if(response.respuesta){
+					alert("Datos guardados correctamente");
+					$("#frmUsuarios > input").val("")
+				}else{
+					alert("Ocurrio un error, intente de nuevo mas tarde");
+				}
+			},
+			error: function(xhr, ajaxOptions, thrownError){
+
+			}
+		});
+		}else{
+			alert("Llene todos los campos");
+		}
+	}
 	$("#btnAceptar").on("click", Aceptar);//enciende el evento del boton
 	$("#txtNombreUsuario").on("keypress", teclaNombreUsuario);
+	$("#btnGuardar").on("click",Guardar);
 }
 
 

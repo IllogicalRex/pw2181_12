@@ -1,5 +1,5 @@
 <?php
-	include 'conexiones.php'
+	include 'conexiones.php';
 	function valida(){
 		$respuesta = false;
 		$usuario=$_POST["usuario"];
@@ -13,7 +13,7 @@
 			$respuesta = true;
 		}
 		$salidaJSON = array('respuesta' => $respuesta);
-		print json_decode($salidaJSON);
+		print json_encode($salidaJSON);
 	}
 
 	$opc=$_POST["opc"];

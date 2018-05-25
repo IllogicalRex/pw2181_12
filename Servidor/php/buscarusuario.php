@@ -1,5 +1,5 @@
 <?php
-	include 'conexiones.php'
+	include 'conexiones.php';
 	function buscarusuario(){
 		$respuesta = false;
 		$usuario=$_POST["usuario"];
@@ -21,7 +21,8 @@
 		$salidaJSON = array('respuesta' => $respuesta,
 							'nombre'    => $nombre,
 							'clave'     => $clave);
-		print json_decode($salidaJSON);
+		var_dump($salidaJSON);
+		print json_encode($salidaJSON);
 	}
 
 	$opc=$_POST["opc"];
