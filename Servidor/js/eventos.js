@@ -33,7 +33,7 @@ var inicioApp = function(){
 	}
 	var buscarUsuario = function(){
 		var usuario = $("#txtNombreUsuario").val();
-		var parametros = "opc=buscarUsuario"+"&usuario"+usuario+"&aleatorio"+Math.random();
+		var parametros = "opc=buscarUsuario"+"&usuario="+usuario+"&aleatorio="+Math.random();
 		if(usuario != ""){
 			$.ajax({
 			cache:false,
@@ -69,7 +69,11 @@ var inicioApp = function(){
 		var usuario = $("#txtNombreUsuario").val();
 		var nombre = $("#txtNombre").val();
 		var clave = $("#txtClaveUsuario").val();
-
+		var parametros = "opc=guardarUsuario"+
+		"&usuario="+usuario+
+		"&clave="+clave+
+		"&nombre="+nombre+
+		"&aleatorio="+Math.random(); 
 		if(usuario!="" && nombre!="" && clave!= ""){
 			$.ajax({
 			cache:false,
@@ -93,9 +97,21 @@ var inicioApp = function(){
 			alert("Llene todos los campos");
 		}
 	}
+
+	var Borrar = function(){
+		var usuario = $("#txtNombreUsuario").val();
+		var nombre = $("#txtNombre").val();
+		var pregunta = prompt("Seguro de borrar a "+nombre+"? (si/no)", "no");
+
+		if(pregunta != null && pregunta == "si"){
+			//Aqui va el AJAX
+		}
+	}
 	$("#btnAceptar").on("click", Aceptar);//enciende el evento del boton
 	$("#txtNombreUsuario").on("keypress", teclaNombreUsuario);
 	$("#btnGuardar").on("click",Guardar);
+	$("#btnBorrar").on("click",Borrar);
+	
 }
 
 
