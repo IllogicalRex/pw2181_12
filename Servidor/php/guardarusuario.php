@@ -16,7 +16,7 @@
 		if(mysqli_num_rows($resConsulta)>0){
 			//actualizamos
 			$respuesta = true;
-			$consultaGuarda=sprintf("UPDATE usuarios set nombre = %s, clave = %s where usario = %s",$nombre,$clave,$usuario);
+			$consultaGuarda=sprintf("UPDATE usuarios set nombre = %s, clave = %s where usuario = %s",$nombre,$clave,$usuario);
 
 		}else{//No existe en la tabla
 			$consultaGuarda=sprintf("INSERT into usuario values(default,%s,%s,%s)",$usuario,$nombre,$clave);

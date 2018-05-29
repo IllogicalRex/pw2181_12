@@ -84,7 +84,7 @@ var inicioApp = function(){
 			success: function(response){
 				if(response.respuesta){
 					alert("Datos guardados correctamente");
-					$("#frmUsuarios > input").val("")
+					$("#frmUsuarios > input").val("");
 				}else{
 					alert("Ocurrio un error, intente de nuevo mas tarde");
 				}
@@ -107,10 +107,35 @@ var inicioApp = function(){
 			//Aqui va el AJAX
 		}
 	}
+
+	var Listado = function(){
+		$("main > #frmUsuarios").hide("slow");
+		$("#frmListado").show("slow");
+		var parametros = "opc=listado"+
+						"&aleatorio="+Math.random();
+		$.ajax({
+			cache:false,
+			type: "POST",//para que no muestre contraseña
+			dataType: "json",
+			url: "php/Listado.php",
+			data: parametros,
+			success: function(response){
+				if(response.respuesta==true){
+					$("#tblListado").append(response.tabla);
+				}else{
+					alert("Ocurrio un error, intente de nuevo mas tarde");
+				}
+			},
+			error: function(xhr, ajaxOptions, thrownError){
+
+			}
+		});
+	}
 	$("#btnAceptar").on("click", Aceptar);//enciende el evento del boton
 	$("#txtNombreUsuario").on("keypress", teclaNombreUsuario);
 	$("#btnGuardar").on("click",Guardar);
 	$("#btnBorrar").on("click",Borrar);
+	$("#btnListado").on("click",Listado);
 	
 }
 
